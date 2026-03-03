@@ -11,9 +11,16 @@
   <header>
     <nav class="nav">
       <strong>iknowyourforma</strong>
-      <a href="./">Home</a>
-      <a href="./services.html">Services</a>
-      <a href="./about.html" class="active">About</a>
+
+      <button class="burger" type="button" data-burger aria-label="Menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="navlinks" data-navlinks>
+        <a href="./">Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./about.html" class="active">About</a>
+      </div>
     </nav>
   </header>
 
@@ -23,5 +30,7 @@
       <p>This is the second page.</p>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

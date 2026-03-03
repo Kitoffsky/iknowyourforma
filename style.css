@@ -10,3 +10,15 @@ main { max-width: var(--max); margin: 0 auto; padding: 24px 16px; }
 small { color: #666; }
 
 .nav a.active{background:#111;color:#fff}
+
+/* Mobile nav */
+.burger { display:none; margin-left:auto; border:1px solid #e5e5e5; background:transparent; padding:6px 10px; border-radius:10px; font-size:18px; line-height:1; }
+.navlinks { display:flex; gap:14px; align-items:center; }
+
+@media (max-width: 640px) {
+  .burger { display:inline-flex; }
+  .nav { flex-wrap: wrap; }
+  .navlinks { width:100%; display:none; flex-direction: column; align-items: flex-start; gap: 6px; padding-top: 10px; }
+  .navlinks.open { display:flex; }
+  .nav a { width:100%; }
+}

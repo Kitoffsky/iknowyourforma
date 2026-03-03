@@ -11,9 +11,16 @@
   <header>
     <nav class="nav">
       <strong>iknowyourforma</strong>
-      <a href="./">Home</a>
-      <a href="./services.html" class="active">Services</a>
-      <a href="./about.html">About</a>
+
+      <button class="burger" type="button" data-burger aria-label="Menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="navlinks" data-navlinks>
+        <a href="./">Home</a>
+        <a href="./services.html" class="active">Services</a>
+        <a href="./about.html">About</a>
+      </div>
     </nav>
   </header>
 
@@ -25,8 +32,10 @@
         <li>Service 2 — placeholder</li>
         <li>Service 3 — placeholder</li>
       </ul>
-      <small>Next: we’ll style this as cards and add a mobile burger menu.</small>
+      <small>Mobile menu now supported.</small>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
